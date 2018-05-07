@@ -1,0 +1,25 @@
+.title {
+  h1,
+  h6 {
+    margin: 0px;
+    font-family: roboto;
+    color: darken(#ddd, 40);
+    font-size: 24px;
+  }
+
+  h6 {
+    color: darken(#ddd, 20);
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &-dark {
+    h1 {
+      color: darken(#fff, 10);
+    }
+
+    h6 {
+      color: darken(#fff, 30);
+    }
+  }
+}

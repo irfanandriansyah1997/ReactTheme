@@ -1,0 +1,21 @@
+.input {
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 18px;
+  font-family: roboto;
+  color: lighten(#000, 20);
+  margin: 10px;
+  outline: 0px;
+  background-color: transparent;
+  border: 1px solid #ddd;
+
+  &:hover {
+    border: 1px solid darken(#69acec, 5);
+  }
+
+  &-dark {
+    border: 1px solid darken(#ddd, 50);
+    color: darken(#fff, 20);
+  }
+}

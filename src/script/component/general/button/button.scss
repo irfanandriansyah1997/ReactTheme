@@ -1,0 +1,26 @@
+.btn {
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 18px;
+  font-family: roboto;
+  color: lighten(#000, 20);
+  outline: 0px;
+  cursor: pointer;
+  background: #ddd;
+
+  &:hover {
+    background: darken(#ddd, 5);
+  }
+
+  &-dark {
+    color: #fff;
+    outline: 0px;
+    cursor: pointer;
+    background: lighten(#000, 40);
+
+    &:hover {
+      background: lighten(#000, 20);
+    }
+  }
+}
