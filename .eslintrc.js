@@ -1,14 +1,19 @@
 module.exports = {
   root: true,
+  parser: 'babel-eslint',
   parserOptions: {
-    parser: 'babel-eslint',
     ecmaVersion: 6,
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+      experimentalDecorators: true,
+      jsx: true
+    }
   },
   env: {
     browser: true,
-    jest: true,
-    es6: true
+    node: true,
+    jasmine: true
   },
   extends: 'airbnb',
   rules: {
@@ -20,6 +25,7 @@ module.exports = {
     'space-before-function-paren': ['error', 'always'],
     quotes: [1, 'single'],
     semi: [1, 'never'],
+    'import/prefer-default-export': 0,
     'import/no-extraneous-dependencies': [2, { devDependencies: true }],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/prefer-stateless-function': 0,
