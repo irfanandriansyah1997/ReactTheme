@@ -15,11 +15,11 @@
 
   &-dark {
     h1 {
-      color: darken(#fff, 10);
+      color: darken(#fff, 10) !important;
     }
 
     h6 {
-      color: darken(#fff, 30);
+      color: darken(#fff, 30) !important;
     }
   }
 }
